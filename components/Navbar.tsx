@@ -33,11 +33,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
             <div className={`p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300 bg-eco-green text-white`}>
               <Globe size={24} className="opacity-90" />
             </div>
-            <div className="flex flex-col">
-              <h1 className={`text-2xl font-serif font-bold leading-none tracking-tight transition-colors ${textColor}`}>
+            <div className="flex flex-col justify-center">
+              <h1 className={`text-3xl font-script font-bold leading-none tracking-wide transition-colors ${textColor}`}>
                 Aarushi Asawa
               </h1>
-              <p className={`text-xs font-bold tracking-[0.2em] uppercase mt-1 opacity-80 group-hover:opacity-100 transition-opacity ${subTextColor}`}>
+              <p className={`text-[0.65rem] font-bold tracking-[0.2em] uppercase mt-1.5 opacity-80 group-hover:opacity-100 transition-opacity ${subTextColor} pl-1`}>
                 Sustainability Consultant
               </p>
             </div>

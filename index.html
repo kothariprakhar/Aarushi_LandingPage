@@ -32,11 +32,25 @@
               'float-medium': 'float 6s ease-in-out infinite',
               'float-fast': 'float 4s ease-in-out infinite',
               'spin-slow': 'spin 12s linear infinite',
+              'spin-windmill': 'spin 4s linear infinite',
+              'ray-flow': 'rayFlow 2s ease-out infinite',
+              'sequester': 'sequester 5s ease-in-out infinite',
             },
             keyframes: {
               float: {
                 '0%, 100%': { transform: 'translateY(0)' },
                 '50%': { transform: 'translateY(-15px)' },
+              },
+              rayFlow: {
+                '0%': { strokeDashoffset: '10', opacity: '0' },
+                '50%': { opacity: '1' },
+                '100%': { strokeDashoffset: '0', opacity: '0' }
+              },
+              sequester: {
+                '0%': { transform: 'translateY(-15px) scale(1)', opacity: '0' },
+                '20%': { opacity: '0.8' },
+                '80%': { opacity: '0.8' },
+                '100%': { transform: 'translateY(15px) scale(0.5)', opacity: '0' }
               }
             }
           }
